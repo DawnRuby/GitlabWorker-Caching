@@ -1,0 +1,8 @@
+target/*
+.cache/data.json
+.cache/testfile.media
+.cache/testfolder/testfolder.media
+testdata/testfile.media
+testdata/testfolder/testfolder.media
+.cache/Unix/testfile.media
+.cache/Unix/testfolder/testfolder.media

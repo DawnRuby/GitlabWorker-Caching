@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Unix",
+            "cargo": {
+                "args": [
+                    "build"
+                ]
+            },
+            "args": [
+                "/backup",
+                "-namespace",
+                "default",
+                "-id",
+                "1234",
+                "-address",
+                "/var/run/containerd/containerd.sock",
+                "-publish-binary",
+                "./bin/containerd",
+            ],
+            "env": {
+                "cachepath_testdata": "./testdata/testfolder",
+                "cachefile_testdata": "./testdata/testfile.media",
+                "CI_PROJECT_ID": "1",
+                "CI_COMMIT_BRANCH": "main",
+                "WEBDAVADDR": "https://u345076.your-storagebox.de",
+                "WEBDAVUSER": "u345076",
+                "WEBDAVPASS": "9r8tdATnyZdKuBR1",
+            },
+        }
+    ]
+}
